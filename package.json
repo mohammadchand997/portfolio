@@ -9,7 +9,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && git add dist -f && git commit -m 'Deploy' && git push origin main"
   },
   "dependencies": {
     "framer-motion": "^11.11.17",
